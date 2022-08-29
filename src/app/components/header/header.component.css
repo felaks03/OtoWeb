@@ -1,0 +1,52 @@
+
+.navbar{
+    background-color: white;
+    height: 120px;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+.name{
+    margin-left: 10rem;
+}
+.navbar-brand{
+    color: var(--main-bg-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.job{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: end;
+    margin-right: 10rem;
+}
+.nav-item{
+    padding: 0.5rem 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    color: var(--main-bg-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+.nav-item:hover{
+    color: black;
+    border-bottom: 3px solid black;
+    transform: translateY(-8px);
+    transition: 0.25s;
+}
+.home-current{
+    padding: 0.75rem 1.5rem;
+    margin-left: 2rem;
+    font-size: 1.2rem;
+    color: var(--main-bg-color);
+    font-weight: 400;
+    text-decoration: none;
+}
+.hovered-item{
+    color: black;
+    border-bottom: 3px solid black;
+    transform: translateY(-8px);
+}

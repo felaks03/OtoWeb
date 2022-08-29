@@ -1,0 +1,11 @@
+<div class="card">
+    <form [formGroup]="formModel" (ngSubmit)="getData()" class="m-5">
+        <div class="password">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" id="password" formControlName="password" placeholder="Escribe la contraseña" class="form-control">
+            <p class="error" *ngIf="formModel.get('password')?.hasError('required') && formModel.get('password')?.touched">Campo requerido</p>
+            <p class="error" *ngIf="!correct && formModel.get('password')?.touched && !formModel.get('password')?.hasError('required')">La contraseña no es correcta</p>
+        </div>
+        <button type="submit" class="btn btn-dark" [disabled]="!formModel.valid">Continuar</button>
+    </form>
+</div>
