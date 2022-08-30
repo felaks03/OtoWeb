@@ -5,7 +5,7 @@
     width: 60%;
     height: 675px;
     color: #262626;
-    padding: 27.5rem 35rem 0 4rem;
+    padding: 26rem 32rem 0 4rem;
     animation: 0.8s ease-out 0s 1 slideLeft;
 }
 .e2{
@@ -13,7 +13,7 @@
     width: 40%;
     height: 675px;
     color: white;
-    padding: 27.5rem 4rem 0 4rem;
+    padding: 26rem 4rem 0 4rem;
     animation: 0.8s ease-out 0s 1 slideBottom;
 }
 .title1, .title2{
@@ -21,6 +21,9 @@
     font-size: 3rem;
     font-weight: 700;
     margin:0 0 2rem 0;
+}
+.title1{
+    font-size: 4rem;
 }
 .text1, .text2{
     font-size: 1.3rem;
@@ -68,15 +71,15 @@
     margin: 4em;
 }
 .s-img{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-left: 10rem;
     z-index: 1;
     border-radius: 50%;
 }
 .bg-circle{
-    width: 400px;
-    height: 400px;
+    width: 500px;
+    height: 500px;
     margin-left: -39rem;
     margin-top: 1rem;
     background-color: rgb(227, 227, 227);
