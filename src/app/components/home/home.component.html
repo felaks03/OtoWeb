@@ -1,27 +1,51 @@
-<header>
-    <app-header></app-header>
-</header>
-
+<app-header></app-header>
 <div class="f-info d-flex">
-    <div class="e1">
-        <h2 class="title1">ORL</h2>
-        <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto delectus labore ab blanditiis corrupti expedita?</p>
-        <div class="border1"></div>
+    <div class="slider">
+        <div class="slides">
+            <div class="slide first group-s" id="first">
+                <img src="../../../assets/banner-oto.jpg" alt="">
+                <div class="img-t">
+                    <h2>ORL</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                </div>
+            </div>
+            <div class="slide group-s">
+                <img src="../../../assets/bg-felix.jpg" alt="">
+                <div class="img-t">
+                    <h2>"El mejor cuidado para ti"</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                </div>
+            </div>
+            <div class="slide group-s">
+                <img src="../../../assets/oido.jpg" alt="">
+                <div class="img-t">
+                    <h2>Oido1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                </div>
+            </div>
+            <div class="slide group-s">
+                <img src="../../../assets/oido2.jpg" alt="">
+                <div class="img-t">
+                    <h2>Oido 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-manual">
+            <label for="radio1" id="radio-1" class="manual-btn"></label>
+            <label for="radio2" id="radio-2" class="manual-btn"></label>
+            <label for="radio3" id="radio-3" class="manual-btn"></label>
+            <label for="radio4" id="radio-4" class="manual-btn"></label>
+        </div>
+        <div class="radios">
+            <input type="radio" name="radio" id="radio1" value="0" (click)="clickRad($event)">
+            <input type="radio" name="radio" id="radio2" value="-20" (click)="clickRad($event)">
+            <input type="radio" name="radio" id="radio3" value="-40" (click)="clickRad($event)">
+            <input type="radio" name="radio" id="radio4" value="-60" (click)="clickRad($event)">
+        </div>
     </div>
-    <div class="e2">
-        <h2 class="title2">Cuidado de oidos</h2>
-        <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, ducimus.</p>
-        <div class="border2"></div>
-    </div>
-</div>
-<div class="s-info d-flex justify-content-between bg-light">
-    <img src="../../../assets/oido.jpg" alt="group img" class="s-img">
-    <div class="bg-circle"></div>
-    <div class="s-text">
-        <h3 class="s-title">"Te mereces el mejor cuidado"</h3>
-        <p class="s-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum minus velit consequuntur non molestias similique aperiam inventore impedit labore nam voluptas commodi ullam mollitia maxime cupiditate vitae dolores, ipsum distinctio. Molestias non nam assumenda explicabo, nisi quas accusantium possimus necessitatibus debitis, eum rerum impedit veritatis! In nam quo eveniet mollitia odio nemo ad totam impedit ullam cupiditate. Similique deleniti magni dignissimos, incidunt reprehenderit tempora. Illo suscipit ipsam cum voluptates maxime inventore facilis ratione rerum, totam repudiandae? Eos necessitatibus quibusdam excepturi delectus obcaecati. Eveniet blanditiis eius expedita. Adipisci placeat totam alias reiciendis culpa commodi quis sit, laborum, dolorem minus consequuntur omnis!</p><br>
-        <p class="s-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos corporis suscipit ab? Accusantium, odio ad enim culpa eveniet veritatis error molestiae ex veniam saepe fuga quos doloribus inventore minus sapiente! Modi laudantium labore iste quaerat suscipit eos, possimus nihil molestiae architecto dolores deleniti velit magnam accusamus quidem rem aliquid eum.
-        </p>
-        <div class="border1"></div>
-    </div>  
 </div>
