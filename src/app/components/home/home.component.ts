@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       document.getElementById("first")!.style.marginLeft = this.margin + "%"
     }
   }
-  marginTimer = setInterval(this.setMargin, 6000);
+  marginTimer = setInterval(this.setMargin, 7500);
 
   clickRad($event: any){
     this.margin = $event.target.value
