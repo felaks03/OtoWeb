@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  margin: number = 0
+  margin: number = -20
   setMargin(): any{
     if(this.margin > -60){
       if(this.margin == 0){
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
       document.getElementById("first")!.style.marginLeft = this.margin + "%"
     }
   }
-  marginTimer = setInterval(this.setMargin, 10000);
+  marginTimer = setInterval(this.setMargin, 6000);
 
   clickRad($event: any){
     this.margin = $event.target.value
