@@ -1,9 +1,8 @@
-<app-header></app-header>
 <div class="f-info d-flex">
     <div class="slider">
         <div class="slides">
             <div class="slide first group-s" id="first">
-                <img src="../../../assets/banner-oto.jpg" alt="">
+                <img src="../../../assets/operacion1.jpg" alt="">
                 <div class="img-t">
                     <h2>ORL</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
@@ -11,7 +10,7 @@
                 </div>
             </div>
             <div class="slide group-s">
-                <img src="../../../assets/bg-felix.jpg" alt="">
+                <img src="../../../assets/operacion1.jpg" alt="">
                 <div class="img-t">
                     <h2>"El mejor cuidado para ti"</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
@@ -19,7 +18,7 @@
                 </div>
             </div>
             <div class="slide group-s">
-                <img src="../../../assets/oido.jpg" alt="">
+                <img src="../../../assets/operacion1.jpg" alt="">
                 <div class="img-t">
                     <h2>Oido1</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
@@ -27,7 +26,7 @@
                 </div>
             </div>
             <div class="slide group-s">
-                <img src="../../../assets/oido2.jpg" alt="">
+                <img src="../../../assets/operacion1.jpg" alt="">
                 <div class="img-t">
                     <h2>Oido 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
@@ -36,16 +35,10 @@
             </div>
         </div>
         <div class="nav-manual">
-            <label for="radio1" id="radio-1" class="manual-btn"></label>
-            <label for="radio2" id="radio-2" class="manual-btn"></label>
-            <label for="radio3" id="radio-3" class="manual-btn"></label>
-            <label for="radio4" id="radio-4" class="manual-btn"></label>
-        </div>
-        <div class="radios">
-            <input type="radio" name="radio" id="radio1" value="0" (click)="clickRad($event)">
-            <input type="radio" name="radio" id="radio2" value="-20" (click)="clickRad($event)">
-            <input type="radio" name="radio" id="radio3" value="-40" (click)="clickRad($event)">
-            <input type="radio" name="radio" id="radio4" value="-60" (click)="clickRad($event)">
+            <div for="radio1" id="0" class="manual-btn" (click)="clickRadio($event)"></div>
+            <div for="radio2" id="-20" class="manual-btn" (click)="clickRadio($event)"></div>
+            <div for="radio3" id="-40" class="manual-btn" (click)="clickRadio($event)"></div>
+            <div for="radio4" id="-60" class="manual-btn" (click)="clickRadio($event)"></div>
         </div>
     </div>
 </div>

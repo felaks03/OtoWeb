@@ -69,11 +69,11 @@ h3{
 }
 .manual-btn{
     border: 2px solid var(--main-bg-color);
-    padding: 5px;
+    padding: 3px;
     border-radius: 50%;
     cursor: pointer;
     transition: 1s;
-    margin-right: 25px;
+    margin-right: 20px;
 }
 .manual-btn:nth-child(4){
     margin-right: 0;
@@ -81,12 +81,5 @@ h3{
 .manual-btn:hover{
     background-color: var(--main-bg-color);
 }
-.nav-auto{
-    position: absolute;
-}
-.nav-auto div{
-    border: 2px solid var(--main-bg-color);
-    padding: 5px;
-    border-radius: 50%;
-    transition: 1s;
+.first{
 }

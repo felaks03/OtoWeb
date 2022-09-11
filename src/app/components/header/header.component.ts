@@ -25,12 +25,24 @@ export class HeaderComponent implements OnInit {
         this.currentRoute = event.url;
         if(this.currentRoute == '/home'){
           this.home = true
+          this.otorrino = false
+          this.sobremi = false
+          this.contacto = false
         } else if(this.currentRoute == '/otorrino'){
           this.otorrino = true
+          this.home = false
+          this.sobremi = false
+          this.contacto = false
         } else if(this.currentRoute == '/sobre-mi'){
           this.sobremi = true
+          this.otorrino = false
+          this.home = false
+          this.contacto = false
         } else if(this.currentRoute == '/contacto'){
           this.contacto = true
+          this.otorrino = false
+          this.sobremi = false
+          this.home = false
         } 
       }
     })

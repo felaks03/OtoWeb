@@ -8,6 +8,7 @@ import { LoginTestComponent } from './components/login-test/login-test.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ORLComponent } from './components/orl/orl.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HeaderComponent } from './components/header/header.component';
     WebBuildingComponent,
     LoginTestComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ORLComponent
   ],
   imports: [
     BrowserModule,

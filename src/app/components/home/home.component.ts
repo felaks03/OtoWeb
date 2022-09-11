@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { __values } from 'tslib';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   constructor() { 
-    this.marginTimer
+    
   }
 
   ngOnInit(): void {
@@ -45,5 +46,17 @@ export class HomeComponent implements OnInit {
   clickRad($event: any){
     this.margin = $event.target.value
     document.getElementById("first")!.style.marginLeft = this.margin + "%"
+  }
+
+  clickRadio($event: any){
+    document.getElementById("0")!.style.backgroundColor = "inherit"
+    document.getElementById("-20")!.style.backgroundColor = "inherit"
+    document.getElementById("-40")!.style.backgroundColor = "inherit"
+    document.getElementById("-60")!.style.backgroundColor = "inherit"
+    document.getElementById($event.target.id)!.style.backgroundColor = "rgb(67, 180, 255)"
+    this.margin = $event.target.id
+    console.log(this.margin)
+    document.getElementById("first")!.style.marginLeft = this.margin + "%"
+    
   }
 }
