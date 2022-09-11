@@ -68,6 +68,7 @@ h3{
     justify-content: center;
 }
 .manual-btn{
+    background-color: inherit;
     border: 2px solid var(--main-bg-color);
     padding: 3px;
     border-radius: 50%;
