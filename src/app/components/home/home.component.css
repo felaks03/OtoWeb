@@ -1,11 +1,9 @@
-body {
-    display: flex;
+
+.slider {
     height: calc(100vh - 120px);
     justify-content: center;
     align-items: center;
-}
-
-.slider {
+    overflow: hidden;
     width: 100%;
     height: calc(100vh - 120px);
 }
@@ -30,6 +28,13 @@ body {
 .radios input:nth-child(4) {
     margin-right: 0;
 }
+.manual-btn:nth-child(1){
+    background-color: var(--main-bg-color);
+}
+.bg-img{
+    width: 100vw;
+    height: auto;
+}
 
 .slide{
     width: 20%;
@@ -37,21 +42,28 @@ body {
     display: flex;
 }
 .group-s img{
-    width: 67%;
-    height: calc(100vh - 120px);
+    max-width: 100%;
+    height: auto;
 }
-.img-t{
-    padding: 3rem 5rem;
-    background-color: var(--main-bg-color2);
+.text{
+    position: absolute;
+    margin: 22rem 0 0 10rem;
+    
 }
 
 h2{
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 2rem;
+    color: white;
+    animation: startText 1.5s 0s;
+    transform: translateY(-50px);
 }
 p{
     font-size: 1.5rem;
+    color: white;
+    animation: startText 1.5s 0s;
+    transform: translateY(-50px);
 }
 h3{
     width: 100px;
@@ -82,5 +94,14 @@ h3{
 .manual-btn:hover{
     background-color: var(--main-bg-color);
 }
-.first{
+
+@keyframes startText {
+    0%{
+        transform: translateY(50px);
+        color: rgba(255, 255, 255, 0);
+    }    
+    100%{
+        transform: translateY(-50px);
+        color: white;
+    }
 }

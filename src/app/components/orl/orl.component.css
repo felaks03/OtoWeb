@@ -26,14 +26,13 @@
     margin-bottom: 10rem;
 }
 .f-img, .s-img{
-    width: 500px;
-    height: 400px;
-    shape-outside: url("../../../assets/operacion1.jpg");
+    width: 200px;
+    height: 200px;
     float: left;
+    margin: 2rem;
     border: 5px solid black;
-    transform: scale(0.8);
 }
-.s-img{
+.f-r{
     float: right;
 }
 .title{
