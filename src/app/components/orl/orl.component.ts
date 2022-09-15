@@ -12,4 +12,11 @@ export class ORLComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+  scrollText($event: any){
+    document.getElementById($event.target.value)?.scrollIntoView()
+  }
+
+  titles = ["Faringitis nasal", "Roncopatía", "Otitis externa", "Disfonía", "Adenoamigdalectomía", "Faringítis crónica"]
+  
 }

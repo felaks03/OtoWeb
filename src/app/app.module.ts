@@ -9,6 +9,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ORLComponent } from './components/orl/orl.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { AlicanteCComponent } from './components/alicante-c/alicante-c.component';
+import { SanvicenteCComponent } from './components/sanvicente-c/sanvicente-c.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { ORLComponent } from './components/orl/orl.component';
     LoginTestComponent,
     HomeComponent,
     HeaderComponent,
-    ORLComponent
+    ORLComponent,
+    ContactoComponent,
+    AlicanteCComponent,
+    SanvicenteCComponent,
   ],
   imports: [
     BrowserModule,
