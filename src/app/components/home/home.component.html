@@ -1,46 +1,8 @@
-<div class="slider">
-    <div class="slides">
-        <div class="slide first group-s" id="first">
-            <div class="img-t1">
-                <div class="text" id="text1">
-                    <h2 class="t-t">Title</h2>
-                    <p class="t-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
-                </div>
-                <img src="../../../assets/operacion2.jpg" alt="" class="bg-img">
-            </div>
-        </div>
-        <div class="slide group-s">
-            <div class="img-t">
-                <div class="text" id="text2">
-                    <h2 class="t-t">Title</h2>
-                    <p class="t-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
-                </div>
-                <img src="../../../assets/oto.jpg" alt="" class="bg-img">
-            </div>
-        </div>
-        <div class="slide group-s">
-            <div class="img-t">
-                <div class="text" id="text3">
-                    <h2 class="t-t">Title</h2>
-                    <p class="t-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
-                </div>
-                <img src="../../../assets/operacion4.jpg" alt="" class="bg-img tras">
-            </div>
-        </div>
-        <div class="slide group-s">
-            <div class="img-t">
-                <div class="text" id="text4">
-                    <h2 class="t-t">Title</h2>
-                    <p class="t-t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, libero.</p>
-                </div>
-                <img src="../../../assets/op1.jpg" alt="" class="bg-img">
-            </div>
-        </div>
-    </div>
-    <div class="nav-manual">
-        <button for="radio1" id="radio-1" class="manual-btn" (click)="clickRadio($event)" value="0"></button>
-        <button for="radio2" id="radio-2" class="manual-btn" (click)="clickRadio($event)" value="-20"></button>
-        <button for="radio3" id="radio-3" class="manual-btn" (click)="clickRadio($event)" value="-40"></button>
-        <button for="radio4" id="radio-4" class="manual-btn" (click)="clickRadio($event)" value="-60"></button>
+<div class="all" id="all">
+    <h1 class="title">{{imgsdb[numImg - 1].title}}</h1>
+    <p class="parag">{{imgsdb[numImg - 1].text}}</p>
+    <div class="prevnext">
+        <img src="../../../assets/flecha1.png" class="arrow down" alt="" (click)="numImgDown()">
+        <img src="../../../assets/flecha1.png" class="arrow up" alt="" (click)="numImgUp()">
     </div>
 </div>

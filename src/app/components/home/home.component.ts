@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { __values } from 'tslib';
+import { Imagesbg } from 'src/app/interfaces/imagesbg.interface';
 
 @Component({
   selector: 'app-home',
@@ -8,82 +8,72 @@ import { __values } from 'tslib';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { 
-    
-  }
-  margin : number = 0
-  isActive: boolean = false
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  
-  clickRadio($event: any){
-    document.getElementById("radio-1")!.style.backgroundColor = "inherit"
-    document.getElementById("radio-2")!.style.backgroundColor = "inherit"
-    document.getElementById("radio-3")!.style.backgroundColor = "inherit"
-    document.getElementById("radio-4")!.style.backgroundColor = "inherit"
-    document.getElementById($event.target.id)!.style.backgroundColor = "rgb(67, 180, 255)"
-    this.margin = $event.target.value
-    document.getElementById("first")!.style.marginLeft = this.margin + "%"
-    document.getElementById("first")!.style.transition = "margin-left 0.8s ease-out"
-    if (this.margin == 0){
-      document.getElementById("text2")!.style.transform = "translateY(50px)"
-      document.getElementById("text2")!.style.color = "rgba(255, 255, 255, 0)"
+  numImg: number = 1
 
-      document.getElementById("text3")!.style.transform = "translateY(50px)"
-      document.getElementById("text3")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text4")!.style.transform = "translateY(50px)"
-      document.getElementById("text4")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text1")!.style.transform = "translateY(-50px)"
-      document.getElementById("text1")!.style.color = "white"
-
-      document.getElementById("text1")!.style.transition = "all 1.5s ease-out"
-    } if (this.margin == -20){
-      document.getElementById("text1")!.style.transform = "translateY(50px)"
-      document.getElementById("text1")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text3")!.style.transform = "translateY(50px)"
-      document.getElementById("text3")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text4")!.style.transform = "translateY(50px)"
-      document.getElementById("text4")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text2")!.style.transform = "translateY(-50px)"
-      document.getElementById("text2")!.style.color = "white"
-
-      document.getElementById("text2")!.style.transition = "all 1.5s ease-out"
-    } if (this.margin == -40){
-      document.getElementById("text1")!.style.transform = "translateY(50px)"
-      document.getElementById("text1")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text2")!.style.transform = "translateY(50px)"
-      document.getElementById("text2")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text4")!.style.transform = "translateY(50px)"
-      document.getElementById("text4")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text3")!.style.transform = "translateY(-50px)"
-      document.getElementById("text3")!.style.color = "white"
-
-      document.getElementById("text3")!.style.transition = "all 1.5s ease-out"
-    } if (this.margin == -60){
-      document.getElementById("text1")!.style.transform = "translateY(50px)"
-      document.getElementById("text1")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text2")!.style.transform = "translateY(50px)"
-      document.getElementById("text2")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text3")!.style.transform = "translateY(50px)"
-      document.getElementById("text3")!.style.color = "rgba(255, 255, 255, 0)"
-
-      document.getElementById("text4")!.style.transform = "translateY(-50px)"
-      document.getElementById("text4")!.style.color = "white"
-
-      document.getElementById("text4")!.style.transition = "all 1.5s ease-out"
-    } 
+  numImgUp(){
+    if(this.numImg < this.imgsdb.length){
+      this.numImg++
+    } else {
+      this.numImg = 1
+    }
+    document.getElementById("all")!.style.backgroundImage = this.imgsdb[this.numImg - 1].url  
   }
-  
+  numImgDown(){
+    if(this.numImg > 1){
+      this.numImg--
+    } else {
+      this.numImg = this.imgsdb.length
+    }
+    document.getElementById("all")!.style.backgroundImage = this.imgsdb[this.numImg - 1].url
+  }
+
+  imgsdb: Imagesbg[] = [
+    {
+      id: 1,
+      title: "Orl",
+      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, perspiciatis? Aut, veniam laboriosam. Est quia atque tenetur, placeat voluptatibus maiores.",
+      url: "url('../../../assets/operacion2.jpg')"
+    },
+    {
+      id: 2,
+      title: "Odsadrl",
+      text: "Loredsadsadsam ipsum dolor sit amet consectetur adipisicing elit. Sunt, perspiciatis? Aut, veniam laboriosam. Est quia atque tenetur, placeat voluptatibus maiores.",
+      url: "url('../../../assets/operacion1.jpg')"
+    },
+    {
+      id: 3,
+      title: "t",
+      text: "t",
+      url: "r"
+    },
+    {
+      id: 4,
+      title: "t",
+      text: "t",
+      url: "r"
+    },
+    {
+      id: 5,
+      title: "t",
+      text: "t",
+      url: "r"
+    },
+    {
+      id: 6,
+      title: "t",
+      text: "t",
+      url: "r"
+    },
+    {
+      id: 7,
+      title: "t",
+      text: "t",
+      url: "r"
+    },
+  ]
 }

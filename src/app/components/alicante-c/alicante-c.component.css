@@ -1,14 +1,14 @@
 .middle{
     width: 100%;
-    height: calc(85vh - 120px);
+    height: 100%;
     background: linear-gradient(to right, rgba(67, 180, 255, 0.6), transparent), url("../../../assets/cms2.png");
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
 }
 .text{
-    margin-top: 15%;
-    margin-left: 30%;
+    margin-top: 15vh;
+    margin-left: 30vw;
     color: white;
 }
 .place{
