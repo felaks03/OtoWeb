@@ -1,0 +1,16 @@
+.all{
+    background-image: url('../../../assets/principal.jpg');
+    overflow: hidden;
+    height: calc(100vh - 120px);
+    background-size: cover;
+}
+.cv-list{
+    margin: 5rem 15rem;
+    background-color: white;
+    padding: 5rem;
+    text-align: justify;
+}
+li{
+    list-style: circle;
+    font-size: 1.4rem;
+}

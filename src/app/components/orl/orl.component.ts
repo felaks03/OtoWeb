@@ -18,5 +18,4 @@ export class ORLComponent implements OnInit {
   }
 
   titles = ["Faringitis nasal", "Roncopatía", "Otitis externa", "Disfonía", "Adenoamigdalectomía", "Faringítis crónica"]
-  
 }

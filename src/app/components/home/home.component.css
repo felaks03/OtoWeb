@@ -1,20 +1,23 @@
 .all{
     overflow: hidden;
     height: calc(100vh - 120px);
-    background-image: url("../../../assets/operacion2.jpg");
+    background-image: url("../../../assets/principal.jpg");
     background-size: cover;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
 }
 .title{
-    margin: 20% 0 0 10rem;
+    margin: 9% 0 0 2.5rem;
     font-size: 4rem;
     font-weight: 900;
     color: white;
 }
 .parag{
-    margin: 2rem 30% 0 10rem;
-    font-size: 1.5rem;
-    font-weight: 600;
+    margin: 2rem 30% 0 2.5rem;
+    font-size: 2rem;
     color: white;
+    font-weight: 900;
+    text-align: justify;
 }
 
 .arrow{

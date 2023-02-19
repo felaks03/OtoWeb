@@ -12,6 +12,7 @@ import { ORLComponent } from './components/orl/orl.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { AlicanteCComponent } from './components/alicante-c/alicante-c.component';
 import { SanvicenteCComponent } from './components/sanvicente-c/sanvicente-c.component';
+import { SobremiComponent } from './components/sobremi/sobremi.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SanvicenteCComponent } from './components/sanvicente-c/sanvicente-c.com
     ContactoComponent,
     AlicanteCComponent,
     SanvicenteCComponent,
+    SobremiComponent,
   ],
   imports: [
     BrowserModule,

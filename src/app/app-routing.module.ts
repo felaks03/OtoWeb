@@ -6,13 +6,14 @@ import { SanvicenteCComponent } from './components/sanvicente-c/sanvicente-c.com
 import { HomeComponent } from './components/home/home.component';
 import { LoginTestComponent } from './components/login-test/login-test.component';
 import { ORLComponent } from './components/orl/orl.component';
+import { SobremiComponent } from './components/sobremi/sobremi.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'home'},
   {path: 'login', component: HomeComponent},
   {path: 'home', component: HomeComponent},
   {path: 'otorrino', component: ORLComponent},
-  {path: 'sobre-mi', component: HomeComponent},
+  {path: 'sobre-mi', component: SobremiComponent},
   {path: 'contacto', component: ContactoComponent},
   {path: 'alicante', component: AlicanteCComponent},
   {path: 'sanvicente', component: SanvicenteCComponent}
