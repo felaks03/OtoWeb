@@ -1,16 +1,28 @@
-<nav class="nav-bar navbar-light bg-light">
-    <div class="name">
-        <a class="navbar-brand" href="#">Dr. Félix Ruiz de la Cuesta Juste</a>
+<div class="all navbar">
+
+    <a class="navbar-brand" [routerLink]="'/home'">
+        <h2 class="name">Dr. Félix Ruiz de la Cuesta</h2>
         <p class="job">Otorrinolaringólogo</p>
+    </a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
+        <div class="rightnav" id="rightnav">
+            <button class="navbar-toggler" id="navbar-togg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" (click)="backguroundColor($event)">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
+                <a class="nav-item" [routerLink]="'/home'" *ngIf="!home">Home</a>
+                <a class="nav-item hovered-item" [routerLink]="'/home'" *ngIf="home">Home</a>
+                <a class="nav-item" [routerLink]="'/otorrino'" *ngIf="!otorrino">ORL</a>
+                <a class="nav-item hovered-item" [routerLink]="'/otorrino'" *ngIf="otorrino">ORL</a>
+                <a class="nav-item" [routerLink]="'/sobre-mi'" *ngIf="!sobremi">Sobre mi</a>
+                <a class="nav-item hovered-item" [routerLink]="'/sobre-mi'" *ngIf="sobremi">Sobre mi</a>
+                <a class="nav-item" [routerLink]="'/contacto'" *ngIf="!contacto">Contacto</a>
+                <a class="nav-item hovered-item" [routerLink]="'/contacto'" *ngIf="contacto">Contacto</a>
+            </ul>
+        </div>
     </div>
-    <ul class="navbarnav" id="navbarNav">
-        <a class="nav-item" [routerLink]="'/home'" *ngIf="!home">Home</a>
-        <a class="nav-item hovered-item" [routerLink]="'/home'" *ngIf="home">Home</a>
-        <a class="nav-item" [routerLink]="'/otorrino'" *ngIf="!otorrino">ORL</a>
-        <a class="nav-item hovered-item" [routerLink]="'/otorrino'" *ngIf="otorrino">ORL</a>
-        <a class="nav-item" [routerLink]="'/sobre-mi'" *ngIf="!sobremi">Sobre mi</a>
-        <a class="nav-item hovered-item" [routerLink]="'/sobre-mi'" *ngIf="sobremi">Sobre mi</a>
-        <a class="nav-item" [routerLink]="'/contacto'" *ngIf="!contacto">Contacto</a>
-        <a class="nav-item hovered-item" [routerLink]="'/contacto'" *ngIf="contacto">Contacto</a>
-    </ul>
 </nav>
+</div>

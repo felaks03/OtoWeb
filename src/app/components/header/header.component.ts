@@ -47,7 +47,20 @@ export class HeaderComponent implements OnInit {
       }
     })
   }
+  togg: any
+  right: any
+  backguroundColor($event: any){
+    this.togg = document.getElementById('navbar-togg')
+    this.right = document.getElementById('rightnav')
+    if (this.togg.getAttribute('aria-expanded') == 'true'){
+      this.right.style.backgroundColor = "rgb(250, 250, 250)"
+    } else {
+      this.right.style.backgroundColor = "#FFFFFF"
+    }
+    console.log(this.togg.getAttribute('aria-expanded'))
+  }
 
+  
   
   ngOnInit(): void {
     

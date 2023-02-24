@@ -2,26 +2,26 @@
     overflow: hidden;
     height: calc(100vh - 120px);
     background-image: url("../../../assets/principal.jpg");
+    background-position: center top;
     background-size: cover;
     /* filter: blur(8px);
   -webkit-filter: blur(8px); */
 }
 .title{
-    margin: 9% 0 0 2.5rem;
-    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
     font-weight: 900;
     color: white;
 }
 .parag{
-    margin: 2rem 30% 0 2.5rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     font-weight: 900;
     text-align: justify;
 }
 
 .arrow{
-    width: 150px;
+    width: 125px;
     top: 80%;
     position: absolute;
 }
@@ -34,6 +34,51 @@
     transform: rotate(180deg);
 }
 .arrow:hover{
-    width: 175px;
+    width: 150px;
     transition: all 1.5s;
+}
+.text{
+    margin: 7% 30% 0 3%;
+    padding: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.35);
+    border-radius: 50px;
+}
+@media (max-width:1399px) {
+    .title{
+        font-size: 2.5rem;
+    }    
+    .parag{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:991px) {
+    .text{
+        margin: 7% 10% 0 10%;
+    }
+    .title{
+        font-size: 2rem;
+    }    
+    .parag{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width:767px) {
+    .text{
+        margin: 5% 5% 0 5%;
+    }
+    .title{
+        font-size: 1.6rem;
+    }    
+    .parag{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:767px) {
+    
+    .title{
+        font-size: 1.3rem;
+    }    
+    .parag{
+        font-size: 0.9rem;
+    }
 }

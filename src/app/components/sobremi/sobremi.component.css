@@ -1,16 +1,38 @@
 .all{
-    background-image: url('../../../assets/principal.jpg');
-    overflow: hidden;
-    height: calc(100vh - 120px);
-    background-size: cover;
+    background: url('../../../assets/principal.jpg') repeat-y top center;
+    padding: 8%;
+    height: max(100vh, 100%);
 }
 .cv-list{
-    margin: 2% 5%;
-    background-color: white;
-    padding: 5%;
+    color: rgb(0, 0, 0);
+    background-color: hsla(0, 0%, 100%, 0.75);
+    padding: 8%;
+    border-radius: 50px;
     text-align: justify;
 }
 li{
-    list-style: circle;
-    font-size: 1.4rem;
+    list-style: none;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 1.8rem;
+}
+.fa-circle{
+    width: 7px;
+    margin-right: 7px;
+}
+@media (max-width: 575px) {
+    li{
+        font-size: 0.8rem;
+    }
+    .cv-list{
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .title{
+        font-size: 1.2rem;
+    }
 }
