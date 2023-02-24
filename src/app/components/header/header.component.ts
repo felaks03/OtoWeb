@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit {
     this.togg = document.getElementById('navbar-togg')
     this.right = document.getElementById('rightnav')
     if (this.togg.getAttribute('aria-expanded') == 'true'){
-      this.right.style.backgroundColor = "rgb(250, 250, 250)"
+      this.right.style.backgroundColor = "white"
     } else {
       this.right.style.backgroundColor = "#FFFFFF"
     }
@@ -61,9 +61,12 @@ export class HeaderComponent implements OnInit {
   }
 
   
+  closeToggler() {
+    document.getElementById('navbarTogglerDemo01')!.setAttribute('class', 'navbar-collapsing collapsing')
+    window.location.reload()
+  }
   
   ngOnInit(): void {
-    
   }
 
 }

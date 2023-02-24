@@ -11,7 +11,7 @@
             aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" (click)="backguroundColor($event)">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01" (click)="closeToggler()">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 mt-3">
                 <a class="nav-item" [routerLink]="'/home'" *ngIf="!home">Home</a>
                 <a class="nav-item hovered-item" [routerLink]="'/home'" *ngIf="home">Home</a>
