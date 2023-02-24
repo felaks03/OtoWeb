@@ -2,10 +2,10 @@
 .urls{
     display: flex;
     justify-content: space-between;
-    background: url("../../../assets/mapsedit.png");
+    background: url("../../../assets/mapsedit.png") repeat top center;
     background-repeat: repeat-y;
     background-size: cover;
-    height: calc(100vh - 120px);
+    height: max(100vh, 100%);
 }
 .a-item{
     padding-top: 10vw;
@@ -33,8 +33,8 @@
     border: 0;
 }
 .loc-n{
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
     color: white;
 }
 .a-img:hover{
@@ -45,10 +45,11 @@
 
 .but{
     color: white;
-    padding: 1rem 1.5rem;
+    padding: 0.5rem 1rem;
     border: 3px solid white;
     background-color: inherit;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
 }
 .but:hover{
     font-size: 1.8rem;
@@ -70,4 +71,10 @@
         margin-top: 10vw;
         padding-top: 25vw;
     }
+}
+@media (max-width: 575px) {
+    .loc-n{
+        margin-bottom: 15%;
+    }
+    
 }
