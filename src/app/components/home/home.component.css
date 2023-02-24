@@ -21,8 +21,8 @@
 }
 
 .arrow{
-    width: 125px;
-    top: 80%;
+    width: calc(10% + 50px);
+    top: 85%;
     position: absolute;
 }
 .up{
@@ -32,10 +32,6 @@
 .down{
     margin-left: 1rem;
     transform: rotate(180deg);
-}
-.arrow:hover{
-    width: 150px;
-    transition: all 1.5s;
 }
 .text{
     margin: 7% 30% 0 3%;

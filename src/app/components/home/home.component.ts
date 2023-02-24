@@ -79,7 +79,7 @@ export class HomeComponent implements OnInit {
       id: 8,
       title: "AUDIOLOGÍA y TRATAMIENTO DE LA SORDERA",
       text: "Son innumerables los problemas que se pueden presentar a nivel de los oídos, no solo de forma aguda sino también con características crónicas. Las patologías como las infecciones a alteraciones en la audición, son altamente prevalentes en la sociedad. El oído precisa un correcto estudio y, con frecuencia, pruebas complementarias para llegar a un diagnóstico de certeza y poder así ofrecer el mejor tratamiento individualizado para cada caso.",
-      url: "url('../../../assets/implante.jpg')"
+      url: "url('../../../assets/op1.jpg')"
     },
   ]
 }

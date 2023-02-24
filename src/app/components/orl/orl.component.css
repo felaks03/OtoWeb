@@ -81,7 +81,30 @@ button{
     color: black;
     margin-top: 1rem;
 }
+.btt{
+    position: fixed;
+    opacity: 0;
+    right: 10px;
+    bottom: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.35);
+    border-radius: 5px;
+    border: 0;
+    padding-top: 5px;
+}
+.btt-img{
+    width: 100%;
+    rotate: -90deg;
+}
+.showbtt{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 @media (max-width: 767px) {
     .title{
         font-size: 2rem;
@@ -116,6 +139,10 @@ button{
     }
     .par{
         font-size: 1rem;
+    }
+    .btt{
+        width: 70px;
+        height: 70px;
     }
 }
 @media (max-width: 399px) {
