@@ -2,10 +2,9 @@
     overflow: hidden;
     height: calc(100vh - 120px);
     background-image: url("../../../assets/principal.jpg");
-    background-position: center top;
+    background-position: 45% top;
     background-size: cover;
-    /* filter: blur(8px);
-  -webkit-filter: blur(8px); */
+    background: linear-gradient(to top, #00000030, #00000030), url("../../../assets/principal.jpg") no-repeat top center cover;
 }
 .title{
     margin-bottom: 1rem;
@@ -22,7 +21,7 @@
 
 .arrow{
     width: calc(10% + 50px);
-    top: 85%;
+    top: 75%;
     position: absolute;
 }
 .up{
@@ -34,7 +33,9 @@
     transform: rotate(180deg);
 }
 .text{
+    position: absolute;
     margin: 7% 30% 0 3%;
+    top: 15%;
     padding: 2rem;
     background-color: hsla(0, 0%, 0%, 0.35);
     border-radius: 50px;
@@ -45,6 +46,9 @@
     }    
     .parag{
         font-size: 1.5rem;
+    }
+    .arrow{
+        top: 85%;
     }
 }
 @media (max-width:991px) {
@@ -57,6 +61,7 @@
     .parag{
         font-size: 1.4rem;
     }
+    
 }
 @media (max-width:767px) {
     .text{

@@ -67,7 +67,7 @@ export class HomeComponent implements OnInit {
       id: 6,
       title: "NARIZ Y SENOS PARANASALES",
       text: "La dificultad respiratoria nasal es una de las patologías que con más frecuencia se puede presentar en la región facial. Esta puede ser debida a muchas causas tales como las alteraciones en el tabique nasal, la congestión por alergia, la existencia de pólipos o vegetaciones y los procesos infecciosos como lo son las sinusitis, siendo todas ellas susceptibles de tratamiento médico o quirúrgico. ",
-      url: "url('../../../assets/nariz.jpg')"
+      url: "url('../../../assets/quirofanoedit.jpg')"
     },
     {
       id: 7,
