@@ -1,14 +1,78 @@
-.card{
-    margin: 15rem 20rem;
+/* Login */
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - var(--header-height));
+  background: linear-gradient(165deg, var(--off-white) 0%, var(--primary-light) 100%);
+  padding: 2rem;
 }
+
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  padding: clamp(2rem, 4vw, 3rem) !important;
+  margin: 0 !important;
+}
+
+.password {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--gray-800);
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  border-radius: var(--radius-sm);
+  border: 1.5px solid var(--gray-200);
+  padding: 0.7rem 1rem;
+  font-size: 0.95rem;
+  transition: all var(--transition);
+}
+
+.form-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(26, 143, 227, 0.15);
+}
+
 .btn {
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.95rem;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+  transition: all var(--transition);
 }
-.error{
-    font-size: 0.8rem;
-    color: tomato;
+
+.btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
 }
-input.ng-invalid.ng-touched{
-    border-bottom: 3px solid tomato;
+
+.error {
+  font-size: 0.82rem;
+  color: #ef4444;
+  margin-top: 0.4rem;
+}
+
+input.ng-invalid.ng-touched {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
 }

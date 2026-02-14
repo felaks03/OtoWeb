@@ -1,80 +1,128 @@
 
-.urls{
-    display: flex;
-    justify-content: space-between;
-    background: url("../../../assets/mapsedit.png") repeat top center;
-    background-repeat: repeat-y;
-    background-size: cover;
-    height: max(100vh, 100%);
-}
-.a-item{
-    padding-top: 10vw;
-    width: 35vw;
-    height: 35vw;
-    border: 2px solid black;
-    text-align: center;
-}
-.a-sv{
-    background: linear-gradient(to top, #000000aa, #000000aa), url("../../../assets/clinica2.jpg");
-    background-size: 100%;
-}
-.a-alc{
-    background-image: linear-gradient(to top, #000000aa, #000000aa), url("../../../assets/cms2.png");
-    background-size: 100%;
-}
-.local{
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    margin: 6rem 0 0 0;
-    padding-bottom: 6rem;
-}
-.local:nth-child(2){
-    border: 0;
-}
-.loc-n{
-    font-size: 2.2rem;
-    margin-bottom: 4rem;
-    color: white;
-}
-.a-img:hover{
-    scale: 1.08;
-    border: 5px solid black;
-    transition: 1s all ease-out;
+/* Contacto */
+:host {
+  display: block;
 }
 
-.but{
-    color: white;
-    padding: 0.5rem 1rem;
-    border: 3px solid white;
-    background-color: inherit;
-    font-size: 1.2rem;
-    border-radius: 5px;
-}
-.but:hover{
-    font-size: 1.8rem;
-    padding: 1rem 1.5rem;
-    transition: all 1s ease-in-out;
+.urls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: calc(100vh - var(--header-height));
+  padding: clamp(2rem, 5vw, 4rem);
+  background: linear-gradient(165deg, var(--off-white) 0%, var(--primary-light) 100%);
 }
 
+.local {
+  flex: 1;
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.a-item {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  max-width: 400px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.a-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all var(--transition);
+}
+
+.a-item:hover::before {
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.a-item:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-xl);
+}
+
+.a-sv {
+  background-image: url('../../../assets/clinica2.jpg');
+  background-size: cover;
+}
+
+.a-alc {
+  background-image: url('../../../assets/cms2.png');
+  background-size: cover;
+}
+
+.loc-n {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01em;
+}
+
+.but {
+  position: relative;
+  z-index: 1;
+  color: var(--white);
+  padding: 0.7rem 1.8rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition);
+  letter-spacing: 0.02em;
+}
+
+.but:hover {
+  background: var(--white);
+  color: var(--gray-900);
+  border-color: var(--white);
+  transform: scale(1.05);
+  padding: 0.7rem 1.8rem;
+  font-size: 1rem;
+}
+
+/* Responsive */
 @media (max-width: 991px) {
-    .urls{
-        display: block;
-    }    
-    .local{
-        width: 100%;
-        margin-top: 0;
-    }
-    .a-item{
-        width: 80vw;
-        height: 80vw;
-        margin-top: 10vw;
-        padding-top: 25vw;
-    }
+  .urls {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .local {
+    width: 100%;
+    max-width: none;
+  }
+  .a-item {
+    max-width: 400px;
+  }
 }
+
 @media (max-width: 575px) {
-    .loc-n{
-        margin-bottom: 15%;
-    }
-    
+  .urls {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  .a-item {
+    max-width: 100%;
+    aspect-ratio: 4/3;
+  }
 }

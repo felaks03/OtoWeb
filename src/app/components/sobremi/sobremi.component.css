@@ -1,38 +1,60 @@
-.all{
-    background: url('../../../assets/principal.jpg') repeat-y top center;
-    padding: 8%;
-    height: max(100vh, 100%);
-}
-.cv-list{
-    color: rgb(0, 0, 0);
-    background-color: hsla(0, 0%, 100%, 0.75);
-    padding: 8%;
-    border-radius: 50px;
-    text-align: justify;
-}
-li{
-    list-style: none;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-}
-.title{
-    font-size: 1.8rem;
-}
-.fa-circle{
-    width: 7px;
-    margin-right: 7px;
-}
-@media (max-width: 575px) {
-    li{
-        font-size: 0.8rem;
-    }
-    .cv-list{
-        border-radius: 15px;
-    }
+/* Sobre Mi */
+:host {
+  display: block;
 }
 
-@media (max-width: 400px) {
-    .title{
-        font-size: 1.2rem;
-    }
+.all {
+  min-height: calc(100vh - var(--header-height));
+  padding: clamp(2rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
+  background: linear-gradient(165deg, var(--off-white) 0%, var(--primary-light) 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.cv-list {
+  max-width: 800px;
+  width: 100%;
+  background: var(--white);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  border: 1px solid var(--gray-200);
+  text-align: justify;
+  list-style: none;
+}
+
+.title {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.01em;
+}
+
+li {
+  list-style: none;
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  color: var(--gray-800);
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.fa-circle {
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  color: var(--primary);
+}
+
+@media (max-width: 575px) {
+  .cv-list {
+    padding: 1.5rem;
+    border-radius: var(--radius-lg);
+  }
 }

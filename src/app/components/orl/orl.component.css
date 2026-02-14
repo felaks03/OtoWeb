@@ -1,157 +1,206 @@
-.all{
-    width: 100vw;
-    height: auto;
-    padding: 5%;
-    background: linear-gradient(to top, #43b4ff50, #43b4ff50), url("../../../assets/operacion1.jpg") repeat top center;
-    background-size: 100%;
-    text-align: justify;
-    overflow: hidden;
-}
-.urls{
-    background-color: rgba(255, 255, 255, 0.60);
-    width: 100%;
-    height: 250%;
-    align-items: center;
-    padding: 2.5rem 2rem;
-    margin-bottom: 5rem;
-    display: grid;
-    grid-gap: 30px;
-    grid-template-columns: repeat(3, calc(33.33% - 20px))
+/* ORL - Articles Page */
+:host {
+  display: block;
 }
 
-button{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    
-}
-.url{
-    width: 100%;
-    pointer-events: none;
-    
-}
-.art{
-    background-color: rgba(255, 255, 255, 0.60);
-    padding: 5%;
-    display: inline-block;
-    margin-bottom: 10rem;
-}
-.f-img, .s-img{
-    width: 300px;
-    height: auto;
-    float: left;
-    margin: 2rem;
-    border: 5px solid black;
-}
-.f-r{
-    float: right;
-}
-.title{
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.par{
-    font-size: 1.5rem;
-}
-.images-btn{
-    color: transparent;
-    background-color: transparent;
-    border: none;
-}
-.images-btn:hover{
-    transform: scale(1.2);
-    transition: all 1s ease-out;
-
-}
-.url-t{
-    text-align: center;
-    font-size: 1.2rem;
-}
-.url-div{
-    background-color: rgba(255, 255, 255, 0.70);
-    padding: 3rem;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-.mini-titles{
-    font-size: 1rem;
-    color: black;
-    margin-top: 1rem;
-}
-.btt{
-    position: fixed;
-    opacity: 0;
-    right: 10px;
-    bottom: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.35);
-    border-radius: 5px;
-    border: 0;
-    padding-top: 5px;
-}
-.btt-img{
-    width: 100%;
-    rotate: -90deg;
-}
-.showbtt{
-    opacity: 1;
-    transition: all .2s ease-in-out;
+.all {
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  background: linear-gradient(165deg, var(--off-white) 0%, var(--primary-light) 100%);
+  text-align: justify;
+  overflow: hidden;
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+/* Topic Cards Grid */
+.urls {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
 }
+
+.images-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  overflow: hidden;
+}
+
+.images-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--accent);
+}
+
+.url {
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  pointer-events: none;
+}
+
+.mini-titles {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-800);
+  margin-top: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/* Article Sections */
+.art {
+  max-width: 1000px;
+  margin: 0 auto 4rem;
+  background: var(--white);
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--gray-200);
+  overflow: hidden;
+}
+
+.title {
+  font-size: clamp(1.3rem, 3vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-dark);
+  letter-spacing: -0.01em;
+}
+
+.par {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  line-height: 1.8;
+  color: var(--gray-800);
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: clamp(1rem, 1.3vw, 1.1rem);
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-top: 1.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.li-item {
+  list-style: disc;
+  color: var(--gray-800);
+  font-size: clamp(0.9rem, 1.1vw, 1rem);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.f-img, .s-img {
+  width: clamp(200px, 30%, 320px);
+  height: auto;
+  float: left;
+  margin: 0.75rem 1.5rem 0.75rem 0;
+  border: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  object-fit: cover;
+}
+
+.f-r {
+  float: right;
+  margin: 0.75rem 0 0.75rem 1.5rem;
+}
+
+/* Back to Top */
+.btt {
+  position: fixed;
+  opacity: 0;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition);
+  box-shadow: var(--shadow-md);
+  padding: 0;
+}
+
+.btt:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btt-img {
+  width: 22px;
+  height: 22px;
+  rotate: -90deg;
+  filter: brightness(0) invert(1);
+}
+
+.showbtt {
+  opacity: 1;
+}
+
+/* Responsive */
 @media (max-width: 767px) {
-    .title{
-        font-size: 2rem;
-    }
-    .urls{
-        display: grid;
-        grid-gap: 15px;
-        grid-template-columns: repeat(2, calc(50% - 10px))
-    }
-    .par{
-        font-size: 1.2rem;
-    }    
-    .f-img{
-        float: none;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .f-r{
-        float: none;
-    }
+  .urls {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .f-img, .s-img {
+    float: none;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .f-r {
+    float: none;
+    margin: 1rem 0;
+  }
 }
+
 @media (max-width: 575px) {
-    .mini-titles{
-        margin-bottom: 3rem;
-        font-size: 1.2rem;
-    }
-    .title{
-        font-size: 1.3rem;
-    }
-    .art{
-        padding: 0.5rem;
-    }
-    .par{
-        font-size: 1rem;
-    }
-    .btt{
-        width: 70px;
-        height: 70px;
-    }
+  .urls {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+  .art {
+    padding: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  .btt {
+    width: 42px;
+    height: 42px;
+    right: 1rem;
+    bottom: 1rem;
+  }
 }
+
 @media (max-width: 399px) {
-    .urls{
-        display: grid;
-        grid-gap: 0;
-        grid-template-columns: repeat(1, 100%)
-    }
-    .f-img{
-        width: 100%;
-    }
+  .urls {
+    grid-template-columns: 1fr;
+  }
 }

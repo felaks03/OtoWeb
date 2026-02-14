@@ -1,9 +1,16 @@
-
 <div class="all" id="all">
 </div>
 <div class="prevnext">
-    <img src="../../../assets/flechafinal.png" class="arrow down" alt="" (click)="numImgDown()">
-    <img src="../../../assets/flechafinal.png" class="arrow up" alt="" (click)="numImgUp()">
+    <button class="arrow-btn" (click)="numImgDown()" aria-label="Anterior">
+        <svg viewBox="0 0 24 24">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+    </button>
+    <button class="arrow-btn" (click)="numImgUp()" aria-label="Siguiente">
+        <svg viewBox="0 0 24 24">
+            <polyline points="9 6 15 12 9 18"></polyline>
+        </svg>
+    </button>
 </div>
 <div class="text">
     <h1 class="title">{{imgsdb[numImg - 1].title}}</h1>
