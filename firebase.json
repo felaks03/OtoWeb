@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "./dist/oto-web",
+    "public": "dist/oto-web/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
