@@ -2,14 +2,12 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-web-building',
+  standalone: false,
   templateUrl: './web-building.component.html',
-  styleUrls: ['./web-building.component.css']
+  styleUrls: ['./web-building.component.css'],
 })
 export class WebBuildingComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }

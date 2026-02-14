@@ -4,34 +4,30 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-test',
+  standalone: false,
   templateUrl: './login-test.component.html',
-  styleUrls: ['./login-test.component.css']
+  styleUrls: ['./login-test.component.css'],
 })
 export class LoginTestComponent implements OnInit {
-
-  formModel
-  constructor
-  (
-    private router: Router
-  ) {
-    this.formModel = new FormGroup({
-      password: new FormControl("", [
-        Validators.required,
-      ])
-    }, [])
-   }
-
-  ngOnInit(): void {
+  formModel;
+  constructor(private router: Router) {
+    this.formModel = new FormGroup(
+      {
+        password: new FormControl('', [Validators.required]),
+      },
+      [],
+    );
   }
 
-  correct: boolean = true
-  getData(){
-    if (this.formModel.get('password')?.value == "1237"){
-      this.correct = true
-      this.router.navigate(['/home']) 
-    } else{
-      this.correct = false      
+  ngOnInit(): void {}
+
+  correct: boolean = true;
+  getData() {
+    if (this.formModel.get('password')?.value == '1237') {
+      this.correct = true;
+      this.router.navigate(['/home']);
+    } else {
+      this.correct = false;
     }
   }
-
 }
